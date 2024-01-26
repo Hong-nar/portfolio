@@ -41,7 +41,7 @@ main{
 header, section, footer{
     width:100%;
     margin:auto;
-    border-bottom:1px dashed black;
+    /* border-bottom:1px dashed black; */
 }
 
 
@@ -78,13 +78,8 @@ header{
     border-radius:80px;
     width:25%;
     text-align:center;
+    min-width:150px;
 }
-/* .header-img{
-    width:100%;
-}
-.header-img img{
-    width:100%;
-} */
 /* 네비 */
 .nav-wrap{
     width:100px;
@@ -139,7 +134,7 @@ header{
     display:flex;
     justify-content: center;
     align-items: center;
-    /* background-color: antiquewhite; */
+    background:#e8f3f7;
 }
 .about-group1{
     width:25%;
@@ -175,7 +170,12 @@ header{
     bottom:0;
     left:0;
 }
-.about-group1 p{
+.information{
+    width:80%;
+    /* border:1px solid black; */
+    margin:auto;
+}
+.information p{
     width:80%;
     /* border:1px solid black; */
     text-align:center;
@@ -195,6 +195,17 @@ header{
     height:100%;
     object-fit:cover;
 }
+.contact{
+    width:100%;
+    /* border:1px solid black; */
+    margin:20px auto;
+}
+.contact p{
+    width:100%;
+    text-align:center;
+    font-weight:700;
+    line-height:2.5;
+}
 .about-group2{
     width:80%;
     height:300px;
@@ -203,26 +214,6 @@ header{
     flex-direction:column;
     justify-content:space-around;
 }
-.about-group2 ul li{
-    line-height:200%;
-}
-.about-group2 ul li strong{
-    display:inline-block;
-    width:30%;
-    text-align:justify;
-    line-height:0;
-    padding-right:10px;
-}
-.about-group2 ul li strong::after{
-    content:"";
-    display:inline-block;
-    width:100%;
-}
-.about-group2 ul li strong::before{
-    content:"";
-    display:inline-block;
-    width:100%;
-} */
 .education,
 .career,
 .skill{
@@ -231,6 +222,22 @@ header{
     margin-top:20px;
     font-weight:700;
     text-align:justify;
+}
+.skill-box{
+    /* border:1px solid black; */
+    width:70%;
+}
+#myProgress {
+    width: 100%;
+    background-color:#d1d4d5;
+}
+#myBar {
+    width: 10%;
+    height: 30px;
+    background-color:#819ccb;
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 30px; /* To center it vertically */
+    color:white;
 }
 section:nth-child(2){
     padding-top:70px;
@@ -254,7 +261,7 @@ section:nth-child(2){
 }
 .web-view h2{
     text-align:center;
-    font-size:1rem;
+    font-size:1.5rem;
     padding:5px 0;
     position:relative;
 }
@@ -263,10 +270,14 @@ section:nth-child(2){
     position:absolute;
     width:10rem;
     height:2px;
-    background:#712626;
+    background:#9cb3c7;
     bottom:5px;
     left:50%;
     transform:translate(-50%,0);
+}
+.web-group{
+    width:100%;
+    /* border:1px solid black; */
 }
 .web-img{
     width:100%;
@@ -282,21 +293,32 @@ section:nth-child(2){
 }
 .web-group img{
     width:100%;
-    height:100%;
+    height:80%;
     object-fit:contain;
     object-position:top;
+    /* border:1px solid black; */
 }
-.response{
-    position:absolute;
-    width:30%;
-    max-width:100px;
-    bottom:10px;
-    border:2px solid white;
-    left:20px;
-    z-index:9;
-    background-color:black;
-    border-radius:10px;
-    padding:5px;
+.ewp{
+    /* border:1px solid black; */
+    display:flex;
+    justify-content:space-around;
+    align-items:center; 
+    font-size:1.1rem;
+    font-weight:700;
+}
+.ewp>a{
+    width:40%;
+    /* border:1px solid black; */
+    text-align:center;
+    background-color:#82a7dd;
+    border-radius:30px;
+}
+.c-more{
+    width:40%;
+    /* border:1px solid black; */
+    text-align:center;
+    background-color:#82a7dd;
+    border-radius:30px;
 }
 .more{
     position:absolute;
@@ -439,7 +461,84 @@ section:nth-child(3){
 .side-nav a.side-active{
     background-color:rgb(136, 129, 206);
 }
-
+.banner-box{
+    width:100%;
+}
+.banner-box>div{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    /* border:1px solid black; */
+}
+#icon{
+    width:100%;
+    height:100%;
+    flex-direction:column;
+}
+.icon-box{
+    width:100%;
+    max-width:830px;
+    height:auto;
+}
+.icon-container{
+    width:100%;
+    height:auto;
+}
+.icon-img{
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.equipment{
+    width:30%;
+}
+.equipment-group{
+    width:100%;
+}
+.equipment-box{
+    width:50%;
+    margin:auto;
+}
+.equipment-box img{
+    width:100%;
+}
+.traffic{
+    width:30%;
+}
+.traffic-group{
+    width:100%;
+}
+.traffic-box{
+    width:50%;
+    margin:auto;
+}
+.traffic-img{
+    width:100%;
+}
+.traffic-img img{
+    width:100%;
+}
+.drink{
+    width:30%;
+}
+.drink-group{
+    width:100%;
+}
+.drink-box{
+    width:50%;
+    margin:auto;
+}
+.drink-img{
+    width:100%;
+}
+.drink-img img{
+    width:100%;
+}
 @media screen and (min-width:450px){
     
 }
@@ -450,7 +549,7 @@ section:nth-child(3){
 }
 @media screen and (min-width:768px){
     .first-box{
-        max-width:768px;
+        /* max-width:768px; */
         flex-direction:row;
         padding:0;
     }
@@ -467,6 +566,14 @@ section:nth-child(3){
         align-items:flex-start;
         justify-content:space-around;
         min-height:250px;
+    }
+    .skill-img{
+        width:80%;
+        height:auto;
+        /* border:1px solid black; */
+    }
+    .skill-img img{
+        width:100%;
     }
     .container{
         flex-direction:row;
@@ -493,13 +600,13 @@ section:nth-child(3){
     .web-view .more{
         display:none;
     }
-    .web-explan{
+    /* .web-explan{
         display:flex;
         justify-content:center;
         align-items:center;
         position:relative;
         background-color:#f4f3f3;
-    }
+    } */
     .banner-box{
         flex-direction:row;
         align-items:flex-start;
@@ -533,13 +640,14 @@ section:nth-child(3){
         height:70px;
         position:absolute;
         background-color:rgba(225,225,225,0.7);
-        right:150px;
+        right:15px;
         flex-direction:row;
         justify-content:flex-end;
         align-items:center;
         padding:0;
         width:0;
         overflow:hidden;
+        padding-right:150px;
     }
     .nav-list a{
         font-size:1rem;
@@ -555,10 +663,37 @@ section:nth-child(3){
         height:30px;
     }
     .web-explan{
-
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        position:relative;
+        background-color:#f4f3f3;
     }
     .banner-box div a{
         width:33%;
+    }
+    .resort{
+        width:100%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        border:1px solid black;
+    }
+    .resort-img{
+        width:50%;
+        border:1px solid black;
+    }
+    .ewp{
+        width:50%;
+        height:100%;
+        border:1px solid black;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+        background:#bdcfe9;
+    }
+    .c-more{
+        
     }
     
 }

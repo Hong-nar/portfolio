@@ -12,6 +12,7 @@
         <script src="./js/jquery-3.6.0.min.js"></script>
         
         <script src="./js/common.js"></script>
+        <script src="./js/banner.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
         <link rel="stylesheet" href="css/common.css">
 
@@ -36,9 +37,6 @@
                 <header>
                     <div class="header-wrap">
                         <h1>PORTFOLIO</h1>
-                        <!-- <div class="header-img">
-                            <img src="./images/portfolio.png">
-                        </div> -->
                         <nav class="nav-wrap">
                             <button class="navBt">Work view</button>
                             <div class="nav-list">
@@ -56,26 +54,43 @@
                 <div class="first-box">
                     <div class="about-group1">
                         <h2>홍나리</h2>
-                        <p>Hong NaRi</p>
-                        <p>1997.03.08</p>
+                        <div class="information">
+                            <p>HONG NARI</p>
+                            <p>1997.03.08</p>
+                        </div>
                         <div class="photo">
                             <img src="images/KakaoTalk_20240116_161950512.jpg" alt="프로필 사진">
+                        </div>
+                        <div class="contact">
+                            <p>Phone | 010.4938.3883</p>
+                            <p>Email | skfl38@naver.com</p>
                         </div>
                     </div>
                     <div class="about-group2">
                         <div class="education">
                             <h3>학력사항</h3>
-                            <p><strong>2018.02</strong> 국제대학교 항공관광과 졸업</p>
-                            <p><strong>2016.03</strong> 국제대학교 항공관광과 입학</p>
-                            <p><strong>2016.02</strong> 보영여자고등학교 졸업</p>
+                            <p><strong>2018.02 </strong> 국제대학교 항공관광과 졸업</p>
+                            <p><strong>2016.03 </strong> 국제대학교 항공관광과 입학</p>
+                            <p><strong>2016.02 </strong> 보영여자고등학교 졸업</p>
                         </div>
                         <div class="career">
                             <h3>경력사항</h3>
-                            <p><strong>18.02 ~ 20.06</strong> 유니에스 (출국장 보안검색)</p>
-                            <p><strong>20.07 ~ 23.04</strong> 인천국제공항보안 (출국장 보안검색)</p>
+                            <p><strong>18.02 ~ 20.06 </strong> 유니에스 (출국장 보안검색)</p>
+                            <p><strong>20.07 ~ 23.04 </strong> 인천국제공항보안 (출국장 보안검색)</p>
                         </div>
                         <div class="skill">
                             <h3>스킬</h3>
+                            <div class="skill-box">
+                                <div class="ps">
+                                    포토
+                                </div>
+                                <div class="ai">
+                                    일러
+                                </div>
+                                <div id="myProgress">
+                                    <div id="myBar">10%</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -83,35 +98,33 @@
             <section class="section" id="web">
                 <div class="container">
                     <div class="web-group web-view">
-                        <h2>GLAMPING</h2>
-                        <div class="web-img">
-                            <a href="#">
-                                <picture>
-                                    <!-- <source media="(min-width:1024px)" srcset="./images/main-page2.png"> -->
-                                    <img src="./images/equipment.png" alt="glamping">
-                                </picture>
-                            </a>
-                            <div class="response">
-                                <img src="./images/reserve.png">
+                        <h2 class="s-title">GLAMPING</h2>
+                        <div class="web-box">
+                            <div class="resort">
+                                <div class="resort-img">
+                                    <img src="./images/equipment.png">
+                                </div>
+                                <div class="ewp">
+                                    <span class="c-more">컨셉보기</span>
+                                    <a href="http://skflqkek.dothome.co.kr/glamping/" target="_blank">바로가기</a>
+                                </div>
                             </div>
-                            <span class="more">
-                                작업보기
-                            </span>
+                        </div>
+                        <!-- <div class="web-img">
+                            <a href="#">
+                                <img src="./images/equipment.png">
+                            </a>
                         </div>
                     </div>
                     <div class="web-group web-explan">
-                        <h2>Glamping Website</h2>
-                        <div class="response">
-                            <img src="./images/reserve.png">
-                        </div>
                         <span class="more">
                             작업보기
                         </span>
-                    </div>
+                    </div> -->
                 </div>
             </section>
             <section class="section" id="banner">
-                <h2>배너</h2>
+                <!-- <h2>배너</h2> -->
                 <div class="banner-box">
                     <div>
                         <a href="#">
@@ -136,7 +149,7 @@
                 </div>
             </section>
             <section class="section" id="detail">
-                <h2>상세 이미지</h2>
+                <!-- <h2>상세 이미지</h2> -->
                 <div class="wine">
                     <div class="wine-page">
                         <img src="./images/wine-page.png">
@@ -144,7 +157,59 @@
                 </div>
             </section>
             <section class="section" id="icon">
-                <h2>아이콘</h2>
+                <!-- <h2>아이콘</h2> -->
+                <div class="icon-box">
+                    <div class="icon-container">
+                        <div class="icon-img">
+                            <div class="equipment">
+                                <div class="equipment-group">
+                                    <div class="equipment-box">
+                                        <img src="./images/phone1.png">
+                                    </div>
+                                    <div class="equipment-box">
+                                        <img src="./images/phone2.png">
+                                    </div>
+                                    <div class="equipment-box">
+                                        <img src="./images/macbook.png">
+                                    </div>
+                                    <div class="equipment-box">
+                                        <img src="./images/ipad.png">
+                                    </div>
+                                    <div class="equipment-box">
+                                        <img src="./images/printer.png">
+                                    </div>
+                                    <div class="equipment-box">
+                                        <img src="./images/airpods.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="traffic">
+                                <div class="traffic-group">
+                                    <div class="traffic-box">
+                                        <div class="traffic-img">
+                                            <img src="./images/airplane.png">
+                                        </div>
+                                        <div class="traffic-img">
+                                            <img src="./images/boat.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="drink">
+                                <div class="drink-group">
+                                    <div class="drink-box">
+                                        <div class="drink-img">
+                                            <img src="./images/beer.png">
+                                        </div>
+                                        <div class="drink-img">
+                                            <img src="./images/soju.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section class="section" id="skill">
                 <h2>스킬</h2>
